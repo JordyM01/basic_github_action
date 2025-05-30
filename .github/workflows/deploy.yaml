@@ -1,0 +1,15 @@
+name: "Fisrt github action deploy"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-code:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello world from github action"
+      - run: echo "Correr migraciones"
+      - run: echo "Instalar dependencias"
+      - run: echo "Generar binario"
+      - run: echo "Publicar version"
